@@ -1,0 +1,203 @@
+.about-us {
+  &__wrap {
+    display: grid;
+    grid-template-columns: minmax(600px, 666px) 1fr;
+    gap: 84px;
+    margin: 0 0 120px;
+
+    @media (max-width: 1439px) {
+      gap: 70px;
+    }
+
+    @include vp-1023 {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      margin: 0 0 60px;
+
+      @include vp-767 {
+        gap: 50px;
+        margin: 0 0 50px;
+      }
+
+      & > .about-us__list {
+        order: 2;
+      }
+    }
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+    @include vp-1023 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      gap: 0 12px;
+    }
+
+    @include vp-767 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+  }
+
+  &__item--vertically {
+    grid-row: span 2;
+
+    @include vp-1023 {
+      grid-row: span 1;
+    }
+
+    @include vp-767 {
+      grid-column: span 2;
+
+      .about-us__img {
+        min-height: 180px;
+      }
+    }
+  }
+
+  &__figure {
+    margin: 0;
+  }
+
+  &__img {
+    width: 100%;
+    margin: 0 0 8px;
+
+    @include vp-1023 {
+      min-height: 260px;
+    }
+
+    @include vp-767 {
+      min-height: 200px;
+      margin: 0 0 5px;
+    }
+  }
+
+  &__signature {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    @include vp-767 {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+
+  &__title {
+    display: block;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -0.04em;
+    text-align: right;
+    margin: 0 0 30px;
+
+    @media (max-width: 1219px) {
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 56px;
+      letter-spacing: -0.04em;
+    }
+
+    @media (max-width: 1129px) {
+      font-size: 42px;
+      font-weight: 400;
+      line-height: 56px;
+      letter-spacing: -0.04em;
+    }
+
+    @media (max-width: 1079px) {
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 40px;
+      letter-spacing: -0.04em;
+    }
+
+    @include vp-1023 {
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 56px;
+      letter-spacing: -0.04em;
+      text-align: center;
+      margin: 0 0 20px;
+    }
+
+    @include vp-767 {
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 48px;
+      letter-spacing: -0.04em;
+      text-align: left;
+      margin: 0 0 15px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: right;
+    margin: 0 0 30px;
+
+    @media (max-width: 1079px) {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+
+    @include vp-1023 {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+    }
+  }
+
+  &__link {
+    display: block;
+    text-align: center;
+    width: 240px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    padding: 21px;
+    border: 1px solid $color-swiss-coffee;
+    background-color: transparent;
+    margin: 0 0 0 auto;
+
+    @include vp-1023 {
+      margin: 0 auto;
+    }
+
+    @include vp-767 {
+      width: 200px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      padding: 18px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-user-count;
+    }
+  }
+}

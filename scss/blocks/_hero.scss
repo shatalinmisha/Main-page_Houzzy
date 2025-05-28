@@ -1,0 +1,143 @@
+.hero {
+  width: 100%;
+  min-height: 828px;
+  background-image: url("../images/hero-image/hero-banner-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin: 0 0 120px;
+
+  @include vp-1023 {
+    margin: 0 0 60px;
+    min-height: 548px;
+    background-image: url("../images/hero-image/hero-banner-tablet.jpg");
+  }
+
+  @include vp-767 {
+    margin: 0 0 50px;
+    min-height: 340px;
+    background-image: url("../images/hero-image/hero-banner-mobile.jpg");
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    min-height: 828px;
+
+    @include vp-1023 {
+      min-height: 548px;
+    }
+
+      @include vp-767 {
+        min-height: 340px;
+      }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: none;
+    background-color: $color-hint-of-red;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-user-count;
+    }
+
+    @include vp-1023 {
+      width: 48px;
+      height: 48px;
+    }
+
+    @include vp-767 {
+      width: 36px;
+      height: 36px;
+    }
+
+    &--armchair {
+      position: absolute;
+      top: 77%;
+      left: 6%;
+
+      @include vp-1023 {
+        top: 62%;
+        left: 5%;
+      }
+
+      @include vp-767 {
+        top: 66%;
+        left: 6%;
+      }
+    }
+
+    &--vase {
+      position: absolute;
+      top: 75%;
+      left: 50%;
+
+      @include vp-1023 {
+        top: 61%;
+        left: 48%;
+      }
+
+      @include vp-767 {
+        top: 64%;
+        left: 50%;
+      }
+    }
+
+    &--sofa {
+      position: absolute;
+      top: 71%;
+      left: 76%;
+
+      @include vp-1023 {
+        top: 60%;
+        left: 74%;
+      }
+
+      @include vp-767 {
+        top: 64%;
+        left: 77%;
+      }
+    }
+
+    &--picture {
+      position: absolute;
+      top: 14%;
+      left: 60%;
+
+      @include vp-1023 {
+        top: 15%;
+        left: 59%;
+      }
+
+      @include vp-767 {
+        top: 30%;
+        left: 60%;
+      }
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    color: $color-bokara-grey;
+
+    @include vp-1023 {
+      width: 15px;
+      height: 15px;
+    }
+
+    @include vp-767 {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}

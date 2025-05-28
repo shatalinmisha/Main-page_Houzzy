@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Главная страница - Houzzy</title>
+</head>
+<body>
+  <header class="header "> <!--Меню бургера header--burger-menu-->
+    <div class="container">
+      <div class="header__content">
+        <a class="header__logo-link" href="#" aria-label="Ссылка на главную страницу">
+          <svg class="header__logo-icon" width="110" height="40" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#logo-houzzy"></use>
+          </svg>
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Каталог</a>
+            </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Акции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Отзывы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Доставка</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Оплата</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">События</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <a class="main-nav__burger-phone-link" href="tel:+78000000000">
+            <svg class="main-nav__icon-phone" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </svg>
+            <span class="main-nav__user-phone">8 (800) 000-00-00</span>
+          </a>
+        </nav>
+        <div class="header__user-list">
+          <a class="header__user-link" href="#" aria-label="Ссылка на поиск">
+            <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-search"></use>
+            </svg>
+          </a>
+          <a class="header__user-link" href="#" aria-label="Ссылка на Избранное">
+            <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-heart"></use>
+            </svg>
+            <span class="header__user-count" aria-hidden="true">20</span>
+          </a>
+          <a class="header__user-link" href="#" aria-label="Ссылка на Корзину">
+            <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-bag"></use>
+            </svg>
+            <span class="header__user-count" aria-hidden="true">7</span>
+          </a>
+          <a class="header__user-link" href="tel:88000000000" aria-label="Ссылка на телефон">
+            <svg class="header__user-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-phone"></use>
+            </svg>
+          </a>
+        </div>
+        <button class="header__burger" type="button" aria-label="Кнопка открытия мобильного меню">
+          <svg class="header__burger-icon" width="32" height="32" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-burger"></use>
+          </svg>
+          <svg class="header__burger-close-icon" width="32" height="32" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-close-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h1 class="visually-hidden">Houzzy - Интернет магазин товаров для дома</h1>
+      <div class="container">
+        <div class="hero__wrapper">
+          <button class="hero__btn hero__btn--armchair">
+            <svg class="hero__icon" width="20" height="20" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-plus"></use>
+            </svg>
+          </button>
+          <button class="hero__btn hero__btn--vase">
+            <svg class="hero__icon" width="20" height="20" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-plus"></use>
+            </svg>
+          </button>
+          <button class="hero__btn hero__btn--sofa">
+            <svg class="hero__icon" width="20" height="20" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-plus"></use>
+            </svg>
+          </button>
+          <button class="hero__btn hero__btn--picture">
+            <svg class="hero__icon" width="20" height="20" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#icon-plus"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="about-us">
+      <h2 class="visually-hidden">О компании Houzzy</h2>
+      <div class="container">
+        <div class="about-us__wrap">
+          <ul class="about-us__list">
+            <li class="about-us__item about-us__item--vertically">
+              <figure class="about-us__figure">
+                <picture class="about-us__picture">
+                  <source media="(max-width: 767px)"
+                    srcset="images/hero-image/comfort-home-mobile.jpg 1x, images/hero-image/comfort-home-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="images/hero-image/comfort-home-tablet.jpg 1x, images/hero-image/comfort-home-tablet@2x.jpg 2x">
+                  <img class="about-us__img" src="images/hero-image/comfort-home-desktop.jpg"
+                    srcset="images/hero-image/comfort-home-desktop@2x.jpg 2x" width="321" height="465"
+                    alt="Фото дизайн интерьера">
+                </picture>
+                <figcaption class="about-us__signature">Уют для дома</figcaption>
+              </figure>
+            </li>
+            <li class="about-us__item">
+              <figure class="about-us__figure">
+                <picture class="about-us__picture">
+                  <source media="(max-width: 767px)"
+                    srcset="images/hero-image/home-decor-mobile.jpg 1x, images/hero-image/home-decor-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="images/hero-image/home-decor-tablet.jpg 1x, images/hero-image/home-decor-tablet@2x.jpg 2x">
+                  <img class="about-us__img" src="images/hero-image/home-decor-desktop.jpg"
+                    srcset="images/hero-image/home-decor-desktop@2x.jpg 2x" width="320" height="228"
+                    alt="Фото декора для дома">
+                </picture>
+                <figcaption class="about-us__signature">Декор для дома</figcaption>
+              </figure>
+            </li>
+            <li class="about-us__item">
+              <figure class="about-us__figure">
+                <picture class="about-us__picture">
+                  <source media="(max-width: 767px)"
+                    srcset="images/hero-image/furniture-animals-mobile.jpg 1x, images/hero-image/furniture-animals-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="images/hero-image/furniture-animals-tablet.jpg 1x, images/hero-image/furniture-animals-tablet@2x.jpg 2x">
+                  <img class="about-us__img" src="images/hero-image/furniture-animals-desktop.jpg"
+                    srcset="images/hero-image/furniture-animals-desktop@2x.jpg 2x" width="320" height="180"
+                    alt="Фото кота в лежанке">
+                </picture>
+                <figcaption class="about-us__signature">Мебель для животных</figcaption>
+              </figure>
+            </li>
+          </ul>
+
+          <div class="about-us__description">
+            <span class="about-us__title">Комфортабельный</span>
+            <p class="about-us__text">Houzzy&nbsp;&mdash; это место, где каждая деталь создана с&nbsp;любовью
+              и&nbsp;заботой, чтобы принести
+              тепло и&nbsp;уют в&nbsp;ваш дом. Мы&nbsp;уверены, что красивая и&nbsp;комфортабельная мебель способна
+              создавать особенную атмосферу, наполнять пространство гармонией и&nbsp;радостью. У&nbsp;нас только лучшее
+              качество мебели, которое прослужит долгие годы и&nbsp;будет приносить радость и&nbsp;удовольствие каждый
+              день. Мы&nbsp;заботимся о&nbsp;каждом покупателе.</p>
+            <a class="about-us__link" href="#">Перейти в каталог</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="design">
+      <h2 class="visually-hidden">Дизайнерское решение</h2>
+      <div class="container">
+        <div class="design__wrap">
+          <div class="design__inner">
+            <span class="design__title">Уютный</span>
+            <span class="design__text">для вашего дома</span>
+          </div>
+          <a class="design__link" href="">Подробнее</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular-products">
+      <div class="container">
+        <h2 class="popular-products__title">Популярный</h2>
+        <ul class="popular-products__list">
+          <li class="popular-products__item">
+            <div class="popular-products__card">
+              <a class="popular-products__link" href="#">
+                <span class="popular-products__headband">Диваны</span>
+                <svg class="popular-products__icon" width="28" height="28" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-plus"></use>
+                </svg>
+                <picture>
+                  <source media="(max-width: 767px)"
+                    srcset="images/hero-image/sofas-mobile.jpg 1x, images/hero-image/sofas-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="images/hero-image/sofas-tablet.jpg 1x, images/hero-image/sofas-tablet@2x.jpg 2x">
+                  <img class="popular-products__img" src="images/hero-image/sofas-desktop.jpg"
+                    srcset="images/hero-image/sofas-desktop@2x.jpg 2x" width="338" height="280"
+                    alt="Фото дивана в интерьере">
+                </picture>
+              </a>
+            </div>
+          </li>
+          <li class="popular-products__item">
+            <div class="popular-products__card">
+              <a class="popular-products__link" href="#">
+                <span class="popular-products__headband">Столы</span>
+                <svg class="popular-products__icon" width="28" height="28" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-plus"></use>
+                </svg>
+                <picture>
+                  <source media="(max-width: 767px)"
+                    srcset="images/hero-image/tables-mobile.jpg 1x, images/hero-image/tables-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="images/hero-image/tables-tablet.jpg 1x, images/hero-image/tables-tablet@2x.jpg 2x">
+                  <img class="popular-products__img" src="images/hero-image/tables-desktop.jpg"
+                    srcset="images/hero-image/tables-desktop@2x.jpg 2x" width="338" height="280"
+                    alt="Фото стола в интерьере">
+                </picture>
+              </a>
+            </div>
+          </li>
+          <li class="popular-products__item">
+            <div class="popular-products__card">
+              <a class="popular-products__link" href="#">
+                <span class="popular-products__headband">Стулья</span>
+                <svg class="popular-products__icon" width="28" height="28" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-plus"></use>
+                </svg>
+                <picture>
+                  <source media="(max-width: 767px)"
+                    srcset="images/hero-image/chairs-mobile.jpg 1x, images/hero-image/chairs-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="images/hero-image/chairs-tablet.jpg 1x, images/hero-image/chairs-tablet@2x.jpg 2x">
+                  <img class="popular-products__img" src="images/hero-image/chairs-desktop.jpg"
+                    srcset="images/hero-image/chairs-desktop@2x.jpg 2x" width="338" height="280"
+                    alt="Фото стула в интерьере">
+                </picture>
+              </a>
+            </div>
+          </li>
+          <li class="popular-products__item">
+            <div class="popular-products__card">
+              <a class="popular-products__link" href="#">
+                <span class="popular-products__headband">Home Decor</span>
+                <svg class="popular-products__icon" width="28" height="28" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-plus"></use>
+                </svg>
+                <picture>
+                  <source media="(max-width: 767px)"
+                    srcset="images/hero-image/home-cosiness-mobile.jpg 1x, images/hero-image/home-cosiness-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="images/hero-image/home-cosiness-tablet.jpg 1x, images/hero-image/home-cosiness-tablet@2x.jpg 2x">
+                  <img class="popular-products__img" src="images/hero-image/home-cosiness-desktop.jpg"
+                    srcset="images/hero-image/home-cosiness-desktop@2x.jpg 2x" width="338" height="280"
+                    alt="Декор для дома">
+                </picture>
+              </a>
+            </div>
+          </li>
+          <li class="popular-products__item popular-products__item--beds">
+            <div class="popular-products__card popular-products__card--size">
+              <a class="popular-products__link" href="#">
+                <span class="popular-products__headband">Кровати</span>
+                <svg class="popular-products__icon" width="28" height="28" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-plus"></use>
+                </svg>
+                <picture>
+                  <source media="(max-width: 767px)"
+                    srcset="images/hero-image/beds-mobile.jpg 1x, images/hero-image/beds-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="images/hero-image/beds-tablet.jpg 1x, images/hero-image/beds-tablet@2x.jpg 2x">
+                  <img class="popular-products__img" src="images/hero-image/beds-desktop.jpg"
+                    srcset="images/hero-image/beds-desktop@2x.jpg 2x" width="692" height="240"
+                    alt="Фото кровати в интерьере">
+                </picture>
+              </a>
+            </div>
+          </li>
+          <li class="popular-products__item popular-products__item--armchair">
+            <div class="popular-products__card popular-products__card--size">
+              <a class="popular-products__link" href="#">
+                <span class="popular-products__headband">Кресла</span>
+                <svg class="popular-products__icon" width="28" height="28" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-plus"></use>
+                </svg>
+                <picture>
+                  <source media="(max-width: 767px)"
+                    srcset="images/hero-image/armchair-mobile.jpg 1x, images/hero-image/armchair-mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)"
+                    srcset="images/hero-image/armchair-tablet.jpg 1x, images/hero-image/armchair-tablet@2x.jpg 2x">
+                  <img class="popular-products__img" src="images/hero-image/armchair-desktop.jpg"
+                    srcset="images/hero-image/armchair-desktop@2x.jpg 2x" width="692" height="240"
+                    alt="Фото кресла в интерьере">
+                </picture>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="interior-solutions">
+      <div class="container">
+        <h2 class="interior-solutions__title">Интерьерный</h2>
+        <div class="interior-solutions__wrap">
+          <div class="interior-solutions__inner">
+            <picture>
+              <source media="(max-width: 767px)"
+                srcset="images/hero-image/interior-design-mobile.jpg 1x, images/hero-image/interior-design-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)"
+                srcset="images/hero-image/interior-design-tablet.jpg 1x, images/hero-image/interior-design-tablet@2x.jpg 2x">
+              <img class="interior-solutions__img" src="images/hero-image/interior-design-desktop.jpg"
+                srcset="images/hero-image/interior-design-desktop@2x.jpg 2x" width="900" height="748"
+                alt="Фото дизайн интерьера">
+            </picture>
+            <button class="interior-solutions__btn interior-solutions__btn--armchair">
+              <svg class="interior-solutions__icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-plus"></use>
+              </svg>
+            </button>
+            <button class="interior-solutions__btn interior-solutions__btn--pedestal">
+              <svg class="interior-solutions__icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-plus"></use>
+              </svg>
+            </button>
+            <button class="interior-solutions__btn interior-solutions__btn--commode">
+              <svg class="interior-solutions__icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-plus"></use>
+              </svg>
+            </button>
+            <button class="interior-solutions__btn interior-solutions__btn--torchere">
+              <svg class="interior-solutions__icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-plus"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="interior-solutions__list">
+            <li class="interior-solutions__item">
+              <div class="interior-solutions__card">
+                <a class="interior-solutions__link" href="#">
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="images/hero-image/wood-chair-mobile.png 1x, images/hero-image/wood-chair-mobile@2x.png 2x">
+                    <source media="(max-width: 1023px)"
+                      srcset="images/hero-image/wood-chair-tablet.png 1x, images/hero-image/wood-chair-tablet@2x.png 2x">
+                    <img class="interior-solutions__img-card" src="images/hero-image/wood-chair-desktop.png"
+                      srcset="images/hero-image/wood-chair-desktop@2x.png 2x" width="212" height="240"
+                      alt="Фото кресло wood">
+                  </picture>
+                  <div class="interior-solutions__inner">
+                    <h3 class="interior-solutions__denomination">Кресло wood</h3>
+                    <span class="interior-solutions__price">6 150 руб.</span>
+                    <span class="interior-solutions__layout-link">Подробнее</span>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="interior-solutions__item">
+              <div class="interior-solutions__card">
+                <a class="interior-solutions__link" href="#">
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="images/hero-image/wood-floor-lamp-mobile.png 1x, images/hero-image/wood-floor-lamp-mobile@2x.png 2x">
+                    <source media="(max-width: 1023px)"
+                      srcset="images/hero-image/wood-floor-lamp-tablet.png 1x, images/hero-image/wood-floor-lamp-tablet@2x.png 2x">
+                    <img class="interior-solutions__img-card" src="images/hero-image/wood-floor-lamp-desktop.png"
+                      srcset="images/hero-image/wood-floor-lamp-desktop@2x.png 2x" width="212" height="240"
+                      alt="Фото торшер wood">
+                  </picture>
+                  <div class="interior-solutions__inner">
+                    <h3 class="interior-solutions__denomination">торшер wood</h3>
+                    <span class="interior-solutions__price">1 200 руб.</span>
+                    <span class="interior-solutions__layout-link">Подробнее</span>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="interior-solutions__item">
+              <div class="interior-solutions__card">
+                <a class="interior-solutions__link" href="#">
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="images/hero-image/wood-drawers-mobile.png 1x, images/hero-image/wood-drawers-mobile@2x.png 2x">
+                    <source media="(max-width: 1023px)"
+                      srcset="images/hero-image/wood-drawers-tablet.png 1x, images/hero-image/wood-drawers-tablet@2x.png 2x">
+                    <img class="interior-solutions__img-card" src="images/hero-image/wood-drawers-desktop.png"
+                      srcset="images/hero-image/wood-drawers-desktop@2x.png 2x" width="212" height="240"
+                      alt="Фото комод wood">
+                  </picture>
+                  <div class="interior-solutions__inner">
+                    <h3 class="interior-solutions__denomination">комод wood</h3>
+                    <span class="interior-solutions__price">4 470 руб.</span>
+                    <span class="interior-solutions__layout-link">Подробнее</span>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="interior-solutions__item">
+              <div class="interior-solutions__card">
+                <a class="interior-solutions__link" href="#">
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="images/hero-image/wood-cabinet-mobile.png 1x, images/hero-image/wood-cabinet-mobile@2x.png 2x">
+                    <source media="(max-width: 1023px)"
+                      srcset="images/hero-image/wood-cabinet-tablet.png 1x, images/hero-image/wood-cabinet-tablet@2x.png 2x">
+                    <img class="interior-solutions__img-card" src="images/hero-image/wood-cabinet-desktop.png"
+                      srcset="images/hero-image/wood-cabinet-desktop@2x.png 2x" width="212" height="240"
+                      alt="Фото тумба wood">
+                  </picture>
+                  <div class="interior-solutions__inner">
+                    <h3 class="interior-solutions__denomination">тумба wood</h3>
+                    <span class="interior-solutions__price">2 600 руб.</span>
+                    <span class="interior-solutions__layout-link">Подробнее</span>
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="callback">
+      <h2 class="visually-hidden">Заказать обратный звонок</h2>
+      <div class="container">
+        <div class="callback__wrap">
+          <span class="callback__title">Помощь в выборе товаров</span>
+          <span class="callback__text">Получите бесплатную консультацию менеджера</span>
+          <form class="callback__form" action="#" method="POST">
+            <div class="callback__inner">
+              <div class="custom-input "> <!--Ввод ошибка custom-input--error-->
+                <input class="custom-input__field" type="text" name="user-name" id="user-name" placeholder="Имя"
+                  value="Иван" required>
+                <label class="custom-input__label" for="user-name">Имя</label>
+                <span class="custom-input__error">Поле обязательно для заполнения</span>
+              </div>
+              <div class="custom-input custom-input--error">
+                <input class="custom-input__field" type="tel" name="user-phone" id="user-phone"
+                  placeholder="+7 (___) ___-__-__" required>
+                <label class="custom-input__label" for="user-phone">Телефон</label>
+                <span class="custom-input__error">Поле обязательно для заполнения</span>
+              </div>
+            </div>
+            <button class="callback__btn" type="submit">Отправить</button>
+          </form>
+          <span class="callback__privacy">Нажимая на кнопку «Отправить», я соглашаюсь с условиями <a
+              class="callback__privacy-link" href="#">Политики конфиденциальности</a></span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content-block">
+        <div class="footer__nav-block">
+          <div class="footer__nav">
+            <p class="footer__title">Покупателям</p>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Как сделать заказ</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Доставка</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Оплата</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Каталог</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Коллекции</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Отзывы </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav">
+            <p class="footer__title">О houzzy</p>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">О компании</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Сотрудничество</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Вакансии</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">События</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Контакты</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Реквизиты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <p class="footer__title">Контактная информация</p>
+          <div class="footer__address">
+            <span class="footer__text">г. Красноярск, ул. Декабристов 19а</span>
+            <a class="footer__link" href="tel:88000000000">8 (800) 000-00-00</a>
+          </div>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ссылка на Whatsapp">
+                <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-wa"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ссылка на Телеграм">
+                <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-tg"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ссылка на ВК">
+                <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Ссылка на YouTube">
+                <svg class="social__link-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-yt"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__legal-block">
+        <div class="footer__legal-inner">
+          <a class="footer__legal-link" href="#">Пользовательское соглашение и&nbsp;условия</a>
+          <p class="footer__legal-text">&copy;&nbsp;Houzzy, 2024. Информация на&nbsp;сайте не&nbsp;является офертой
+            и&nbsp;носит информационный характер</p>
+          <a class="footer__legal-link" href="#">Обработка персональных данных</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
